@@ -1,14 +1,20 @@
 <h1>New Dinosaur</h1>
+<%= render "form" %>
+<p>So you want to make an über sexy and hyper dinosaur? Well here you can!
+  Give it a name, make it old or young and show us what it looks like</p>
 
-<%= form_for @dinosaur do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
 
-  <%= f.label :age %>
-  <%= f.number_field :age %>
+  <%= form_for @dinosaur do |f| %>
 
-  <%= f.label :image_url %>
-  <%= f.text_field :image_url %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
 
-  <%= f.submit "Create" %>
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url %>
+
+<iframe src="https://giphy.com/embed/ZrCUYZjwrfeCs" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dinosaur-velociraptor-ZrCUYZjwrfeCs">via GIPHY</a></p>
+
 <% end %>
