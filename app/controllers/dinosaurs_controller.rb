@@ -37,7 +37,7 @@ class DinosaursController < ApplicationController
     end
 
     def dinosaur_params
-      params.require(:dinosaur).permit(:name, :age, :image_url)
+      params.require(:dinosaur).permit(:name, :age, :image_url, :valley_id)
     end
 
     def destroy
